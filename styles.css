@@ -9,6 +9,14 @@ body {
     font-family: Arial, sans-serif;  background-color: #333;
 }
 
+
+.viewport {
+  width: device-width ;
+  zoom: 3.0 ;
+}
+
+
+
 .navbar {
     background-color: #000000;
     color: #fff;

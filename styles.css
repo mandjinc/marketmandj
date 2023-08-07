@@ -58,18 +58,21 @@ body {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 	-webkit-text-stroke: 0.5px white;
+	color: #FF0000;
+	background-color: #000000;
+	padding: 1px 1px;
 }
 
 .hero-content p {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     margin-bottom: 2rem;
+	-webkit-text-stroke: 0.3px white;
+	color: #3446F6;
+	background-color: #000000;
+	padding: 1px 1px;
+
 }
 
-.wave p {
-    font-size: 1.7rem;
-    margin-bottom: 2rem;
- -webkit-text-stroke: 0.4px white;
-}
 
 .btn {
     display: inline-block;

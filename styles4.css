@@ -94,7 +94,7 @@ h2 .white-text {
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #0000FF;
+background: linear-gradient(-45deg, #A4555E, #DA2727, #5A69CF, #3E55E8);
     color: #fff;
     text-decoration: none;
     border: none;
@@ -114,7 +114,7 @@ h2 .white-text {
 .btn2 {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #0000FF;
+background: linear-gradient(-45deg, #A4555E, #DA2727, #5A69CF, #3E55E8);
     color: #fff;
     text-decoration: none;
     border: none;

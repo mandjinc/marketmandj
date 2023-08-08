@@ -44,40 +44,81 @@ body {
 .nav-links a:hover {
     color: #7393B3;
 }
-
+/* mobile*/
 .hero {
   background-color: black;
   background-size: cover;
     background-position: center;
     text-align: center;
     padding: 50px 0;
-  
+	
 }
+	.hero-content h1 {
+	font-size: 61.3vw;
+}
+
+
+/* pc */
+
+
+/* Verison 2.0*/
+
+
 
 @media screen and (min-width: 480px) {
   .hero {
-    background-image: url("https://i.imgur.com/9tG1I8g.jpg");
+    background-image: url("https://imgur.com/3WTNwL3.png");
     background-size: cover;
     background-position: center;
     text-align: center;
     padding: 50px 0;
+	
 }}
+.hero-content h1 {
+	background: linear-gradient(-45deg, #A4555E, #DA2727, #5A69CF, #3E55E8);
+	background-size: 300%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 900;
+	font-size: 4.1vw;
+	 margin-bottom: 1rem;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animated_text 10s ease-in-out infinite;
+	-moz-animation: animated_text 10s ease-in-out infinite;
+	-webkit-animation: animated_text 10s ease-in-out infinite;
 }
 
-.hero-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-	-webkit-text-stroke: 0.5px white;
-	color: #FF0000;
+@keyframes animated_text {
+	0% { background-position: 0px 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0px 50%; }
 }
 
 .hero-content p {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-	-webkit-text-stroke: 0.3px white;
-	color: #3446F6;
-
+	background: linear-gradient(-45deg, #A4555E, #DA2727, #5A69CF, #3E55E8);
+	background-size: 300%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 900;
+	font-size: 1.8vw;
+	
+	margin-bottom: 2rem;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animated_text 10s ease-in-out infinite;
+	-moz-animation: animated_text 10s ease-in-out infinite;
+	-webkit-animation: animated_text 10s ease-in-out infinite;
 }
+
+@keyframes animated_text {
+	0% { background-position: 0px 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0px 50%; }
+}
+
 
 
 .btn {
@@ -88,6 +129,7 @@ body {
     text-decoration: none;
     border: none;
     border-radius: 4px;
+	margin-bottom: -4rem;
     transition: background-color 0.3s ease;
 }
 

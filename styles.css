@@ -46,15 +46,14 @@ body {
 }
 
 .hero {
-    background-image: url("https://i.imgur.com/9tG1I8g.jpg");
     background-size: cover;
     background-position: center;
     color: #fff;
     text-align: center;
     padding: 50px 0;
-    @media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) {
   body {
-    background-color: black;
+    background-image: url("https://i.imgur.com/9tG1I8g.jpg");
 }
     }
 }

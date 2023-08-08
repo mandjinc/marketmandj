@@ -98,15 +98,16 @@ body {
 
 @media screen and (max-width: 440px) {
   .hero-content h1 {
-    font-size: 20px;
+    font-size: 25px;
 }
   .hero-content p {
-    font-size: 24px;
+    font-size: 30px;
   }}
 
 .btn {
     display: inline-block;
     padding: 10px 20px;
+		margin-top: 2rem;
 background: linear-gradient(-45deg, #A4555E, #DA2727, #5A69CF, #3E55E8);
     color: #fff;
     text-decoration: none;

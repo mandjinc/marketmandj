@@ -52,6 +52,11 @@ body {
     color: #fff;
     text-align: center;
     padding: 50px 0;
+    @media screen and (min-width: 480px) {
+  body {
+    background-color: black;
+}
+    }
 }
 
 .hero-content h1 {

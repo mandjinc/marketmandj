@@ -46,7 +46,7 @@ body {
 }
 
   .hero {
-    background-image: url("https://static.wikia.nocookie.net/the-hidden-dungeon-only-i-can-enter/images/7/78/Screenshot_2021-01-16-01-45-41-565_com.google.android.youtube.jpg/revision/latest?cb=20210116161025");
+    background-image: url("https://imgur.com/rV8WECp.png");
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -58,11 +58,10 @@ body {
 	background-size: 300%;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 900;
-	font-size: 4.1vw;
-	 margin-bottom: 1rem;
-	letter-spacing: -1px;
+	font-size: 4.6vw;
+	 margin-bottom: 3rem;
+	letter-spacing: 0px;
 	-webkit-text-stroke: 1px black;
-	text-transform: uppercase;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	animation: animated_text 10s ease-in-out infinite;
@@ -80,13 +79,12 @@ body {
 	background: linear-gradient(-45deg, #A4555E, #DA2727, #5A69CF, #3E55E8);
 	background-size: 300%;
 	font-family: Arial, Helvetica, sans-serif;
-	font-weight: 900;
+	font-weight: 700;
 		-webkit-text-stroke: 1px black;
-	font-size: 3.0vw;
-	
+	font-size: 4.6vw;
 	margin-bottom: 2rem;
 	letter-spacing: 0px;
-	text-transform: uppercase;
+
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	animation: animated_text 10s ease-in-out infinite;

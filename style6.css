@@ -3,17 +3,64 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-body{
+.bev {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 80vh;
   padding: 0 10px;
   background: #000000;
 }
+
+body {
+    font-family: Arial, sans-serif;  background-color: #000000;
+}
+
+
+
+.navbar {
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+	border: 1px solid white;
+}
+
+.logo a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #fff;
+	
+}
+
+
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #7393B3;
+}
+
+
+
+
+
 ::selection{
   color: #fff;
   background: #675AFE;
@@ -45,12 +92,13 @@ form p{
 }
 form input{
   height: 50px;
+  width: 340px;
   font-size: 17px;
   padding: 0 15px;
   border: 1px solid #999;
 }
 form input:focus{
-  padding: 0 14px;
+  padding: 0 15px;
   border: 2px solid #675AFE;
 }
 form .drop-list{

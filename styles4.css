@@ -7,6 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;background-color: #000000;
+	background-image: url('https://imgur.com/F2Sc6iP.jpg');
 }
 
 h2 .white-text {
@@ -51,6 +52,7 @@ h2 .white-text {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
+	background-color: #000000;
 }
 
 .shop h2 {
@@ -67,12 +69,26 @@ h2 .white-text {
 	.speaker-info img {
   border-radius: 0%;
   max-width: 0px;
-}  
+  
+} 
+ 
+@media screen and (max-width: 767px) {
+    .product img {
+        display: none; /* Hide the image on smaller screens */
+    }
+	
+	@media screen and (max-width: 767px) {
+    .side-images img {
+        display: none; /* Hide images on smaller screens if needed */
+    }
+	}
+}
   }
 
 
 
 .product {
+    position: relative; /* Ensure relative positioning for child absolute positioning */
     background-color: #fff;
     padding: 1.5rem;
     border: 1px solid #e0e0e0;
@@ -81,6 +97,8 @@ h2 .white-text {
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     display: flex;
     flex-direction: column;
+    overflow: hidden; /* Ensure no overflow */
+    position: relative; /* Maintain relative positioning */
 }
 
 .product:hover {
@@ -91,8 +109,27 @@ h2 .white-text {
 .product img {
     max-width: 100%;
     height: auto;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+.product-preview {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%; /* Fill entire .product container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn't exceed .product container */
+    max-height: 100%; /* Ensure it doesn't exceed .product container */
+    border: 10px solid black;
+    border-radius: 0px;
+    z-index: -1; /* Move it behind .product content */
+    opacity: 0; /* Initially hide it */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+.product:hover .product-preview {
+    opacity: 1; /* Show on hover */
 }
 
 .product h3 {
@@ -108,9 +145,9 @@ h2 .white-text {
 .btn {
     display: inline-block;
     padding: 10px 20px;
-background: linear-gradient(-45deg, #A4555E, #DA2727, #5A69CF, #3E55E8);
+    background: linear-gradient(-45deg, #A4555E, #DA2727, #5A69CF, #3E55E8);
     color: #fff;
-	margin-bottom: 2rem;
+    margin-bottom: 2rem;
     text-decoration: none;
     border: none;
     border-radius: 4px;
@@ -121,6 +158,7 @@ background: linear-gradient(-45deg, #A4555E, #DA2727, #5A69CF, #3E55E8);
 .btn:hover {
     background-color: #7393B3;
 }
+
 
 .btn2:hover {
     background-color: #7393B3;
@@ -136,4 +174,38 @@ background: linear-gradient(-45deg, #A4555E, #DA2727, #5A69CF, #3E55E8);
     border-radius: 4px;
     transition: background-color 0.3s ease;
     cursor: pointer;
+}
+
+
+
+.product-preview {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 450px; /* Fixed width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 450%; /* Prevent image from exceeding its container */
+    max-height: 400px; /* Limit maximum height if needed */
+    border: 10px solid black;
+    border-radius: 30px;
+}
+
+.product h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.speaker-info {
+    position: relative;
+}
+
+.side-images {
+    position: relative; /* Ensure relative positioning for absolute children */
+}
+
+.side-images img {
+    width: 200px;
+    height: 800px;
+    border: none;
+    z-index: -1;
 }
